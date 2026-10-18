@@ -1,0 +1,24 @@
+Planning for flood fill: 
+
+- Have a function that allows for: 
+	Arguments: coordinates, startingColour, newFillColour
+
+	Wherever this given coordinate is, check if the colour of the pixel to the
+
+	left: (coordinate_x - 1, coordinate_y)
+ 	right: (coordinate_x + 1, coordinate_y)
+ 	below: (coordinate_x, coordinate_y - 1)
+	above: (coordinate_x, coordinate_y + 1)
+
+	has the colour of the startingColour.
+	If true then 
+		set the colour to the newFillColour
+		repeat this function for each of those new coloured pixels
+	Otherwise end
+	
+- Store coordinate of starting pixel where mouse was pressed with the tool
+- Store colour of this pixel as startingColour
+- Run the function stated above for this pixel with arguments (coordinates, startingColour, fillColour)
+-- note fill colour will be found somewhere in the program with tools and colour properties not sure just yet.
+
+
